@@ -1,0 +1,2 @@
+class PostPermission < ApplicationRecord
+end
