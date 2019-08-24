@@ -1,0 +1,6 @@
+<%= content_tag(:h1, 'Airtable Response') %>
+<%= content_tag(:ul) do %>
+  <%= @permissions.each do |record| %>
+    <%= content_tag(:li, "#{record['GithubUser']} #{record['PostTitle']}")
+  <% end %>
+<% end %>
