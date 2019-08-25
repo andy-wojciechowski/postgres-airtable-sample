@@ -19,5 +19,5 @@ production:
   database: deq72far5f1jbo
   prepared_statements: false
   advisory_locks: false
-  username: pajiruwhtccrsm
-  password: 8c73acb25734e3bc1b3a5ee7fd465ed173e55fd25f099039664c6b2614e8e2a9
+  username: <%= ENV['POSTGRES_USERNAME'] %>
+  password: <%= ENV['POSTGRES_PASSWORD'] %>
