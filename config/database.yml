@@ -1,16 +1,23 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: post_development
+  database: PostEditor
   pool: 5
+  username: PostEditorSuperUser
+  password: admin
 
 test:
   adapter: postgresql
   encoding: unicode
-  database: post_test
+  database: PostEditor
   pool: 5
+  username: PostEditorSuperUser
+  password: admin
 
 production:
   adapter: postgresql
+  database: PostEditor
   prepared_statements: false
   advisory_locks: false
+  username: PostEditorSuperUser
+  password: admin
