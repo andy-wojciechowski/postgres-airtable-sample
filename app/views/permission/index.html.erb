@@ -4,3 +4,9 @@
     <%= content_tag(:li, "#{record['GithubUser']} #{record['PostTitle']}") %>
   <% end %>
 <% end %>
+<%= content_tag(:h1, 'Active Record w/ PostGresSQL response') %>
+<%= content_tag(:ul) do %>
+  <%= @permissions2.each do |record| %>
+    <%= content_tag(:li, "#{record.GithubUser} #{record.PostTitle}") %>
+  <% end %>
+<% end %>>
