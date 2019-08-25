@@ -3,16 +3,16 @@ development:
   encoding: unicode
   database: PostEditor
   pool: 5
-  username: PostEditorSuperUser
-  password: admin
+  username: <%= ENV['POSTGRES_USERNAME'] %>
+  password: <%= ENV['POSTGRES_PASSWORD'] %>
 
 test:
   adapter: postgresql
   encoding: unicode
   database: PostEditor
   pool: 5
-  username: PostEditorSuperUser
-  password: admin
+  username: <%= ENV['POSTGRES_USERNAME'] %>
+  password: <%= ENV['POSTGRES_PASSWORD'] %>
 
 production:
   adapter: postgresql
